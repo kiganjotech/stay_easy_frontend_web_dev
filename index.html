@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Easy</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header,
+        section,
+        footer {
+            padding: 20px;
+        }
+
+        nav a {
+            margin-right: 10px;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            display: block;
+            margin-bottom: 12px;
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Stay Easy</h1>
+        <p>Find comfortable stays across Kenya for your next trip.</p>
+
+        <nav>
+            <a href="#stays">Stays</a>
+            <a href="#about">About</a>
+            <a href="#booking">Book</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Book simple and comfortable stays</h2>
+        <p>
+            Stay Easy helps travellers discover clean, affordable, and well-located spaces
+            for short stays, weekend breaks, family visits, and work trips across Kenya.
+        </p>
+        <a href="#booking">Start Booking</a>
+    </section>
+
+    <section id="stays">
+        <h2>Featured Stays</h2>
+
+        <article>
+            <h3>Modern City Apartment</h3>
+            <p>Location: Nairobi</p>
+            <p>Price: KES 4,500 per night</p>
+            <p>A clean apartment close to restaurants, transport, shopping malls, and business areas.</p>
+        </article>
+
+        <article>
+            <h3>Cozy Garden Studio</h3>
+            <p>Location: Kiambu</p>
+            <p>Price: KES 3,200 per night</p>
+            <p>A quiet studio with garden views, ideal for weekend stays, remote work, and quick getaways.</p>
+        </article>
+
+        <article>
+            <h3>Beachside Guest Room</h3>
+            <p>Location: Diani</p>
+            <p>Price: KES 5,800 per night</p>
+            <p>A relaxing room near the beach for travellers who want a calm coastal stay.</p>
+        </article>
+    </section>
+
+    <section id="about">
+        <h2>About Stay Easy</h2>
+        <p>
+            Stay Easy connects guests with comfortable short-stay spaces in convenient locations.
+            Whether you are travelling for work, family, leisure, or a weekend break, we help you
+            find a stay that feels simple, clean, and reliable.
+        </p>
+    </section>
+
+    <section id="booking">
+        <h2>Request a Booking</h2>
+
+        <form action="mailto:bookings@stayeasy.co.ke" method="post" enctype="text/plain">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+
+            <label for="stay">Preferred Stay</label>
+            <select id="stay" name="stay">
+                <option>Modern City Apartment</option>
+                <option>Cozy Garden Studio</option>
+                <option>Beachside Guest Room</option>
+            </select>
+
+            <label for="date">Check-in Date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="message">Booking Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send Booking Request</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: hello@stayeasy.co.ke</p>
+        <p>Phone: +254 700 000 000</p>
+        <p>Website: www.stayeasy.co.ke</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Stay Easy. Comfortable stays across Kenya.</p>
+    </footer>
+
+</body>
+
+</html>
