@@ -5,157 +5,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay Easy</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- Header: keeps the logo, navigation links, theme switcher, and mobile menu controls available at the top. -->
     <header>
         <div class="header-content">
-            <div class="logo">Stay Easy</div>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Stay Easy logo">
+            </a>
 
-            <nav>
+            <nav id="mainNav">
                 <a href="#stays">Stays</a>
+                <a href="#experience">Experience</a>
+                <a href="#testimonials">Reviews</a>
                 <a href="#about">About</a>
                 <a href="#booking">Book</a>
                 <a href="#contact">Contact</a>
             </nav>
+
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">Dark Mode</button>
+
+                <button id="navToggle" class="nav-toggle" aria-label="Open navigation">
+                    ☰
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Hero: introduces the Stay Easy offer and sends visitors to the featured stays. -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
+        <div class="hero-content reveal">
+            <div class="hero-text pop-in">
+                <span class="eyebrow">Comfortable stays across Kenya</span>
+
                 <h1>Book simple and comfortable stays</h1>
 
                 <p>
-                    Stay Easy helps travellers discover clean, affordable,
-                    and well-located spaces for short stays, weekend breaks,
-                    family visits, and work trips across Kenya.
+                    Stay Easy helps travellers discover clean, affordable, and well-located spaces
+                    for short stays, weekend breaks, family visits, and work trips across Kenya.
                 </p>
 
-                <a href="#booking" class="btn">Start Booking</a>
+                <button id="welcomeBtn" class="btn">Explore Stays</button>
             </div>
         </div>
     </section>
 
+    <!-- Featured stays: shows the main accommodation options with location and nightly pricing. -->
     <section id="stays">
-        <div class="section-content">
-            <h2>Featured Stays</h2>
-
-            <p class="section-intro">
-                Explore selected stays in convenient locations across Kenya.
-            </p>
+        <div class="section-content reveal">
+            <div class="section-heading">
+                <span class="eyebrow">Featured locations</span>
+                <h2>Featured Stays</h2>
+                <p class="section-intro">Explore selected stays in convenient locations across Kenya.</p>
+            </div>
 
             <div class="stays-grid">
-
-                <article>
+                <article class="stay-card">
                     <img src="images/house1.jpg" alt="Modern city apartment in Nairobi">
-
                     <div class="card-content">
+                        <span class="price-badge">KES 4,500 / night</span>
                         <h3>Modern City Apartment</h3>
                         <p><strong>Location:</strong> Nairobi</p>
-                        <p><strong>Price:</strong> KES 4,500 per night</p>
-                        <p>
-                            A clean apartment close to restaurants, transport,
-                            shopping malls, and business areas.
-                        </p>
+                        <p>A clean apartment close to restaurants, transport, shopping malls, and business areas.</p>
                     </div>
                 </article>
 
-                <article>
+                <article class="stay-card">
                     <img src="images/house2.jpg" alt="Cozy garden studio in Kiambu">
-
                     <div class="card-content">
+                        <span class="price-badge">KES 3,200 / night</span>
                         <h3>Cozy Garden Studio</h3>
                         <p><strong>Location:</strong> Kiambu</p>
-                        <p><strong>Price:</strong> KES 3,200 per night</p>
-                        <p>
-                            A quiet studio with garden views, ideal for weekend stays,
-                            remote work, and quick getaways.
+                        <p>A quiet studio with garden views, ideal for weekend stays, remote work, and quick getaways.
                         </p>
                     </div>
                 </article>
 
-                <article>
+                <article class="stay-card">
                     <img src="images/house3.jpg" alt="Beachside guest room in Diani">
-
                     <div class="card-content">
+                        <span class="price-badge">KES 5,800 / night</span>
                         <h3>Beachside Guest Room</h3>
                         <p><strong>Location:</strong> Diani</p>
-                        <p><strong>Price:</strong> KES 5,800 per night</p>
-                        <p>
-                            A relaxing room near the beach for travellers who want
-                            a calm coastal stay.
-                        </p>
+                        <p>A relaxing room near the beach for travellers who want a calm coastal stay.</p>
                     </div>
                 </article>
-
             </div>
         </div>
     </section>
 
+    <!-- Experience: explains who the stays are for and points visitors toward booking. -->
+    <section id="experience" class="split-section">
+        <div class="section-content split-layout reveal">
+            <div class="split-image">
+                <img src="images/travel1.jpg" alt="Guest relaxing in a modern stay">
+            </div>
+
+            <div class="split-text">
+                <span class="eyebrow">Designed for travellers</span>
+                <h2>Find stays that fit your plans</h2>
+                <p>
+                    Whether you are travelling for business in Nairobi, visiting family in Kiambu,
+                    or taking a coastal break in Diani, Stay Easy helps you compare options quickly
+                    and send a booking request.
+                </p>
+                <a href="#booking" class="btn">Request a Booking</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking value: reinforces the clean, simple booking flow. -->
+    <section class="split-section white-section">
+        <div class="section-content split-layout reverse reveal">
+            <div class="split-image">
+                <img src="images/travel2.jpg" alt="Clean guest room interior">
+            </div>
+
+            <div class="split-text">
+                <span class="eyebrow">Clean and reliable</span>
+                <h2>Simple booking without confusion</h2>
+                <p>
+                    Guests can review stay details, compare prices, and send a booking request
+                    from one clear flow without unnecessary steps.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials: builds trust with short guest reviews from different stay locations. -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-content reveal">
+            <div class="section-heading">
+                <span class="eyebrow">Guest feedback</span>
+                <h2>What Guests Say</h2>
+                <p class="section-intro">Recent guests share how Stay Easy helped them find comfortable spaces.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-icon">★</div>
+                    <p>Stay Easy made booking extremely simple and the apartment matched the photos perfectly.</p>
+                    <h4>Amina</h4>
+                    <span>Nairobi stay</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-icon">✓</div>
+                    <p>The process felt smooth and easy even on mobile. I found a clean place quickly.</p>
+                    <h4>Kevin</h4>
+                    <span>Kiambu studio</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-icon">⌂</div>
+                    <p>The Diani stay was calm, clean, and well located. I would book again.</p>
+                    <h4>Wanjiku</h4>
+                    <span>Diani guest room</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About: summarizes the platform and the travel needs it supports. -->
     <section id="about">
-        <div class="section-content">
-            <h2>About Stay Easy</h2>
+        <div class="section-content about-layout reveal">
+            <div class="about-image">
+                <img src="images/about1.jpg" alt="Comfortable short stay interior">
+            </div>
 
-            <p>
-                Stay Easy connects guests with comfortable short-stay spaces
-                in convenient locations across Kenya. Whether travelling for work,
-                holidays, family visits, or weekend breaks, guests can quickly find
-                clean and reliable accommodation.
-            </p>
+            <div class="about-text">
+                <div class="section-heading">
+                    <span class="eyebrow">About the platform</span>
+                    <h2>About Stay Easy</h2>
+                </div>
+
+                <p>
+                    Stay Easy connects guests with comfortable short-stay spaces in convenient locations
+                    across Kenya. Whether travelling for work, holidays, family visits, or weekend breaks,
+                    guests can quickly find clean and reliable accommodation.
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- Booking and contact: collects booking details and displays direct contact information. -->
     <section id="booking">
-        <div class="section-content">
-            <h2>Request a Booking</h2>
+        <div class="section-content reveal">
+            <div class="section-heading">
+                <span class="eyebrow">Start your request</span>
+                <h2>Request a Booking</h2>
+                <p class="section-intro">Send us your preferred stay and travel details.</p>
+            </div>
 
-            <p class="section-intro">
-                Send us your preferred stay and travel details.
-            </p>
+            <div class="booking-layout">
+                <form action="mailto:bookings@stayeasy.co.ke" method="post" enctype="text/plain">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
 
-            <form action="mailto:bookings@stayeasy.co.ke" method="post" enctype="text/plain">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
+                    <label for="stay">Preferred Stay</label>
+                    <select id="stay" name="stay">
+                        <option>Modern City Apartment</option>
+                        <option>Cozy Garden Studio</option>
+                        <option>Beachside Guest Room</option>
+                    </select>
 
-                <label for="stay">Preferred Stay</label>
-                <select id="stay" name="stay">
-                    <option>Modern City Apartment</option>
-                    <option>Cozy Garden Studio</option>
-                    <option>Beachside Guest Room</option>
-                </select>
+                    <label for="date">Check-in Date</label>
+                    <input type="date" id="date" name="date">
 
-                <label for="date">Check-in Date</label>
-                <input type="date" id="date" name="date">
+                    <label for="message">Booking Message</label>
+                    <textarea id="message" name="message"></textarea>
 
-                <label for="message">Booking Message</label>
-                <textarea id="message" name="message"></textarea>
+                    <button type="submit">Send Booking Request</button>
+                </form>
 
-                <button type="submit">Send Booking Request</button>
-            </form>
+                <div class="contact-card" id="contact">
+                    <img src="images/contact1.jpg" alt="Guest support and booking assistance">
+
+                    <div class="contact-details">
+                        <h2>Contact Us</h2>
+                        <p>Email: hello@stayeasy.co.ke</p>
+                        <p>Phone: +254 700 000 000</p>
+                        <p>Website: www.stayeasy.co.ke</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="section-content">
-            <h2>Contact Us</h2>
-
-            <p>Email: hello@stayeasy.co.ke</p>
-            <p>Phone: +254 700 000 000</p>
-            <p>Website: www.stayeasy.co.ke</p>
-        </div>
-    </section>
-
+    <!-- Footer: closes the page with the brand name and short positioning line. -->
     <footer>
         <p>&copy; 2026 Stay Easy. Comfortable stays across Kenya.</p>
     </footer>
 
+    <script src="js/app.js"></script>
 </body>
 
 </html>
